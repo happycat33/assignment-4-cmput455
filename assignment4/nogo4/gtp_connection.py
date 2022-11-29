@@ -13,6 +13,14 @@ import numpy as np
 import re
 from sys import stdin, stdout, stderr
 from typing import Any, Callable, Dict, List, Tuple
+import signal
+
+
+def handler(signum, frame):
+    raise TimeoutError('Timeout')
+
+
+signal.signal(signal.SIGALRM, handler)
 
 from board_base import (
     is_black_white,
@@ -73,6 +81,7 @@ class GtpConnection:
             "play": (2, "Usage: play {b,w} MOVE"),
             "legal_moves": (1, "Usage: legal_moves {w,b}"),
         }
+        self.timelimit = 25
 
     def write(self, data: str) -> None:
         stdout.write(data)
@@ -350,9 +359,15 @@ class GtpConnection:
 
     def genmove_cmd(self, args: List[str]) -> None:
         """ generate a move for color args[0] in {'b','w'} """
-        board_color = args[0].lower()
-        color = color_to_int(board_color)
-        move = self.go_engine.get_move(self.board, color)
+        try:
+            signal.alarm(int(self.timelimit))
+            board_color = args[0].lower()
+            color = color_to_int(board_color)
+            move = self.go_engine.get_move(self.board, color)
+
+        except Exception as e:
+            print(e)
+
         if move is None:
             self.respond('unknown')
             return

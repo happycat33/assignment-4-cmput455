@@ -14,6 +14,7 @@ from board import GoBoard
 from board_util import GoBoardUtil
 from engine import GoEngine
 from ucb import runUcb
+from board_base import GO_COLOR, GO_POINT, BLACK, WHITE
 
 
 class NoGo:
@@ -99,6 +100,18 @@ class NoGo:
         #print("Best move:", best, "score", score[best])
         assert best in state.legalMoves()
         return best
+
+    def get_winner(self, board: GoBoard):
+        # get current winner
+        legal_moves = GoBoardUtil.generate_legal_moves(board,
+                                                       board.current_player)
+        if len(legal_moves) > 0:
+            return None
+        else:
+            if board.current_player == BLACK:
+                return WHITE
+            else:
+                return BLACK
 
 
 

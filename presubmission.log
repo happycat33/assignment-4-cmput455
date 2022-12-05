@@ -1,0 +1,106 @@
+Script started on 2022-12-05 20:30:31+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+huolan@huolan-virtual-machine:~/Desktop$ tar xzvf assignment4.tgz [K
+assignment4/
+assignment4/.idea/
+assignment4/.idea/workspace.xml
+assignment4/.idea/inspectionProfiles/
+assignment4/.idea/inspectionProfiles/profiles_settings.xml
+assignment4/.idea/assignment4.iml
+assignment4/.idea/misc.xml
+assignment4/.idea/modules.xml
+assignment4/.idea/.gitignore
+assignment4/NoGo_AI/
+assignment4/NoGo_AI/gtp_connection.py
+assignment4/NoGo_AI/nogo4.py
+assignment4/NoGo_AI/board_util.py
+assignment4/NoGo_AI/MCTS.py
+assignment4/NoGo_AI/engine.py
+assignment4/NoGo_AI/__pycache__/
+assignment4/NoGo_AI/__pycache__/engine.cpython-38.pyc
+assignment4/NoGo_AI/__pycache__/board.cpython-38.pyc
+assignment4/NoGo_AI/__pycache__/MCTS.cpython-38.pyc
+assignment4/NoGo_AI/__pycache__/board_util.cpython-38.pyc
+assignment4/NoGo_AI/__pycache__/gtp_connection.cpython-38.pyc
+assignment4/NoGo_AI/__pycache__/board_base.cpython-38.pyc
+assignment4/NoGo_AI/board.py
+assignment4/NoGo_AI/board_base.py
+assignment4/ucb_player/
+assignment4/ucb_player/gtp_connection.py
+assignment4/ucb_player/board_util.py
+assignment4/ucb_player/engine.py
+assignment4/ucb_player/__pycache__/
+assignment4/ucb_player/__pycache__/board.cpython-38.pyc
+assignment4/ucb_player/__pycache__/board_util.cpython-38.pyc
+assignment4/ucb_player/__pycache__/gtp_connection.cpython-38.pyc
+assignment4/ucb_player/nogo_ucb.py
+assignment4/ucb_player/board.py
+assignment4/ucb_player/board_base.py
+assignment4/readme.txt
+assignment4/random_player/
+assignment4/random_player/gtp_connection.py
+assignment4/random_player/board_util.py
+assignment4/random_player/engine.py
+assignment4/random_player/__pycache__/
+assignment4/random_player/__pycache__/engine.cpython-38.pyc
+assignment4/random_player/__pycache__/board.cpython-38.pyc
+assignment4/random_player/__pycache__/board_util.cpython-38.pyc
+assignment4/random_player/__pycache__/gtp_connection.cpython-38.pyc
+assignment4/random_player/__pycache__/board_base.cpython-38.pyc
+assignment4/random_player/board.py
+assignment4/random_player/board_base.py
+assignment4/random_player/nogo_random.py
+assignment4/play.py
+huolan@huolan-virtual-machine:~/Desktop$ c[Kcd assignment4
+huolan@huolan-virtual-machine:~/Desktop/assignment4$ python pla[K[K[K[K3 play.py
+Player1 made move: E1
+Player2 made move: D6
+Player1 made move: D7
+Player2 made move: A3
+Player1 made move: A4
+Player2 made move: E2
+Player1 made move: E3
+Player2 made move: D5
+Player1 made move: C7
+Player2 made move: A2
+Player1 made move: B4
+Player2 made move: A1
+Player1 made move: F7
+Player2 made move: C4
+Player1 made move: B6
+Player2 made move: B1
+Player1 made move: B2
+Player2 made move: E5
+Player1 made move: G2
+Player2 made move: D4
+Player1 made move: C3
+Player2 made move: C6
+Player1 made move: G6
+Player2 made move: G5
+Player1 made move: C5
+Player2 made move: B7
+Player1 made move: F3
+Player2 made move: D2
+Player1 made move: A5
+Player2 made move: F2
+Player1 made move: F5
+Player2 made move: C1
+Player1 made move: A6
+Player2 made move: F4
+Player1 made move: D3
+Player2 made move: D1
+Player1 made move: C2
+Player2 made move: B3
+Player1 made move: G1
+Player2 made move: G3
+Player1 made move: B5
+Player2 made move: E6
+Player1 made move: F6
+Player2 made move: G4
+Player1 made move: E7
+Winner: Player1 Timeout: 0
+
+Player1 wins 1 Player2 wins 0 Timeouts 0
+huolan@huolan-virtual-machine:~/Desktop/assignment4$ exit
+exit
+
+Script done on 2022-12-05 20:38:21+08:00 [COMMAND_EXIT_CODE="0"]
